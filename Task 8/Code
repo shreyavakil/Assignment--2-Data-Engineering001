@@ -1,0 +1,11 @@
+import re
+
+T = int(input())  # Number of test cases
+
+for _ in range(T):
+    regex = input()
+    try:
+        re.compile(regex)
+        print(True)
+    except re.error:
+        print(False)
